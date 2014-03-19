@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Any element with class "jlink" is clickable and tied to a handler in main.js
+-->
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Adam Gregory</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" media="all" href="css/gregory.css"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+</head>
+<body>
+
+<!-- Specs and Preach intro are display:none by default -->
+<div id="specs" class="mostly_hidden">
+	<h4>Server Specs</h4>
+	<p>This website is hosted on a Raspberry Pi Model B Revision 1.0.</p>
+	<div class='column'>
+		<p>CPU:</p>
+		<p>Memory:</p>
+		<p>Storage:</p>
+		<p>Operating System:</p>
+		<p>Power Supply:</p>
+	</div>
+
+	<div class='column'>
+		<p>700 MHz ARM</p>
+		<p>256MB RAM</p>
+		<p>16GB SD card</p>
+		<p>Raspbian (Debian)</p>
+		<p>5 Volt, 1 Amp</p>
+	</div>
+	<div id='server_image'>
+		<img src="image/tall_server.jpg">
+	</div>
+	<div id='server_software'>
+		<p>Pages are served via Nginx with uWSGI serving Python apps.</p>
+		<p>The Raspberry Pi lives on my office desk.
+	</div>
+	<!-- Hides Specs and returns to main page -->
+	<div class="exit">
+		<p class='jlink'>Exit</p>
+	</div>
+</div>
+
+<div id="preach_intro" class="mostly_hidden">
+	<h4>Preach CMS</h4>
+	<p>This is a simple blog app I built for a local church's website.
+	An existing open source product probabaly made the most sense, but I was 
+	reading <i>Murach's PHP and MySQL</i> and really wanted to build one from 
+	scratch.</p>
+	<br>
+	<p>The app is built with PHP/MySQL and a bit of AJAX.  This example version
+	has minimal styling.</p>
+	<br>
+	<div id="preach_nav">
+		<ul>
+			<li>
+			<p id="preach_continue" class="jlink">Continue</a>
+			</li>
+			<li>
+			<p id="preach_meh" class="jlink">Meh, no thanks</p>
+			</li>
+		</ul>
+	</div>
+</div>
+
+<div id="curator_links" class="mostly_hidden">
+	<div id="from_wysiwyg">
+	</div>
+	<div class='exit'>
+		<p class='jlink'>Back</p>
+	</div>
+</div>
+
+<!-- End display:none section -->
+
+<div id="container">
+
+	<header>
+		<h2>Adam Gregory</h2>
+		<ul>
+			<li>
+				<a id='link_curator'>Link Curator</a>
+			</li>
+			<li>
+				<a id='contact'>Contact</a>
+			</li>
+			<li>
+				<a href="https://github.com/dostoy320" target="_blank">I'm on GitHub!</a>
+			</li>
+		</ul>
+		<div id="tab">
+			<p>specs</p>
+		</div>
+	</header>
+
+	<div id="main">
+		<aside>
+		This site is always a work in progress.
+		</aside>
+		<div id="block">
+			<div id="column_l">
+				<h4>Hello.</h4>
+				<p>I'm interested in pursuing a career in software/web development. This
+				site chronicles my progress in that direction.</p>
+				<p>My languages of focus at the moment are Python and Javascript. Many
+				of my experiments in Python are based around the 
+				<a href="http://www.raspberrypi.org/" target="_blank">Raspberry Pi</a>, which controls 
+				stepper motors, takes photos and powers this site.
+			</div>
+			<div id="column_r">
+				<h4>Current Web-Based Projects</h4>
+					<div class='projects'>
+						<img src="image/picam_s.jpg">
+						<a href="camera/index.php" target="_blank">
+						<div id="camera_link" class="overlay">
+							<p>Raspberry Pi Camera Module</p>
+						</div>
+						</a>
+					</div>
+					<div class='projects'>
+						<img src="image/preach_s.jpg">
+						<div id="preach_link" class="overlay jlink">
+							<p class="jlink">Preach Blog CMS</p>
+						</div>
+					</div>
+			</div>
+			<!-- Begin Blog Post served via AJAX in main.js -->
+			<div id="blog_post">
+				<div id="blog_title">
+				<h4>
+				</h4>
+				</div>
+				<div id="blog_date">
+				<small>
+				</small>
+				</div>
+				<div id="blog_content">
+				</div>
+			</div>
+			<!-- End Blog Post -->
+
+			<div id="resources">
+				<h4>Things That Have Been Helpful</h4>
+				<small>(This section needs organization)</small>
+				<ul><li>
+					<a href="https://cs50.harvard.edu/" target="_blank">Harvard's cs50</a>
+					</li>
+					<li>
+					<a href="http://learnpythonthehardway.org/" target="_blank">Learn Python The Hard Way</a>
+					</li>
+					<li>
+					<a href="https://www.coursera.org/course/programdesign" target="_blank">Introduction to Systematic Program Design - Part 1</a>
+					</li>
+					<li>
+					<a href="http://steve-yegge.blogspot.com/2006/03/execution-in-kingdom-of-nouns.html" target="_blank">
+					Execution in the Kingdom of Nouns</a>
+					</li>
+					<li>
+					<a href="http://martinfowler.com/articles/injection.html" target="_blank">Inversion of Control Containers and the Dependency Injection pattern</a>
+					</li>
+					<li>
+					<a href="http://learnpython.wordpress.com/2012/05/27/how-not-to-get-a-python-job-a-rant">How Not to get a Python Job</a>
+					</li>
+					<li>
+					<a href="https://developers.google.com/edu/python/">Google's Python Class</a>
+					</li>
+				</ul>
+			</div>
+			<div id="flickr_ribbon">
+				<h4>My Recent Posts to Flickr</h4>
+				<small>I love cameras, and it was an excuse to play with the Flickr API</small>
+				<ul id="flickr_list">
+				<!-- Loads via AJAX from flickr_ribbon.js -->
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/flickr_ribbon.js"></script>
+
+</body>
+</html>

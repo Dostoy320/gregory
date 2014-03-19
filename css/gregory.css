@@ -1,0 +1,535 @@
+/*	Less Framework 4
+	http://lessframework.com
+	by Joni Korpi
+	License: http://opensource.org/licenses/mit-license.php	*/
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+a img {border: 0;}
+
+a {
+	text-decoration: none;
+	color: rgb(0, 36, 102);
+}
+
+a:hover {
+	color: rgb(150, 150, 150);
+}
+
+/* A class to make text link-like when handled by javascript */
+.jlink {
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+}
+.jlink:hover {
+	color: rgb(150, 150, 150);
+}
+
+li {
+	list-style: none;
+}
+
+ol li {
+	list-style-type: lower-latin;
+	margin: 10px 0 0 20px;
+}
+
+
+
+/*	Typography presets
+	------------------	*/
+
+.gigantic {
+	font-size: 110px;
+	line-height: 120px;
+	letter-spacing: -2px;
+}
+
+.huge, h1 {
+	font-size: 68px;
+	line-height: 72px;
+	letter-spacing: -1px;
+}
+
+.large, h2 {
+	font-size: 32px;
+	line-height: 48px;
+}
+
+.bigger, h3 {
+	font-size: 26px;
+	line-height: 36px;
+}
+
+.big, h4 {
+	font-size: 22px;
+	line-height: 30px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.small, small {
+	font-size: 13px;
+	line-height: 18px;
+}
+
+/* Selection colours (easy to forget) */
+
+::selection 	 	{background: rgb(255,255,158);}
+::-moz-selection 	{background: rgb(255,255,158);}
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+body {-webkit-tap-highlight-color: rgb(255,255,158);}
+
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+html {
+	background: url(../image/big_towers.jpg) no-repeat center top fixed;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+}
+
+body {
+	width: 896px;
+	padding: 0px 48px 84px;
+	margin: 0 auto;
+	position: relative;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	color: rgb(60,60,60);
+	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
+}
+
+.mostly_hidden {
+	position: relative;
+	background: rgba(255, 255, 255, 0.9);
+	margin: 10% auto;
+	border-radius: 5px;
+	padding: 20px;
+}
+
+#specs {
+	width: 90%;
+	min-width: 700px;
+	height: 500px;
+	display: none;
+}
+
+#specs .column {
+	width: 150px;
+	float:left;
+	margin-top:20px;
+}
+
+#specs #server_image {
+	width: 250px;
+	float: right;
+	margin-right: 50px;
+}
+
+#server_image img {
+	border: 1px solid;
+}
+
+#specs #server_software {
+	position: absolute;
+	top: 300px;
+	width: 55%;
+}
+
+#specs .exit {
+	position: absolute;
+	top: 420px;
+	left: 45%;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+#curator_links {
+	display: none;
+}
+
+#container {
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+}
+
+
+header {
+	position: relative;
+	background: rgba(255, 255, 255, 0.9);
+	width: 100%;
+	height: 90px;
+	margin-top: -20px;
+	border-bottom: 1px solid rgb(220, 220, 220);
+}
+
+header h2 {
+	font-weight: 600;
+	font-size: 2.5em;
+	color: rgb(50, 50, 50);
+	margin: 20px 0 0 20px;
+}
+
+header ul {
+	float: right;
+	margin: 10px 70px 0px 0;
+}
+
+header ul li {
+	display: inline-block;
+	margin: 0 0 20px 20px;
+	color: black;
+	font-size: 1em;
+	cursor: pointer;
+}
+
+header ul li a:hover {
+	color: rgb(1, 1, 1);
+	border-bottom: 1px solid;
+}
+
+header #tab {
+	position: absolute;
+	top: 0;
+	left: 80%;
+	width: 75px;
+	height: 20px;
+	background: rgb(45, 110, 210);
+	color: rgb(255, 255, 255);
+	border-bottom: 0.8px solid rgb(190, 190, 190);
+	border-left: 0.8px solid rgb(190, 190, 190);
+	border-right: 0.8px solid rgb(190, 190, 190);
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	font-size: 0.8em;
+	text-align: center;
+	cursor: pointer;
+}
+
+#main {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+#main aside {
+	margin: 60px auto; /*This value dictates the gap between header and block.*/
+	text-align: center;
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 1.5em;
+	font-style: italic;
+}
+
+#main #block {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.9);
+	border: 1px solid rgb(220, 220, 220);
+}
+
+#main #block #column_l {
+	float: left;
+	width: 30%;
+	padding: 20px 0 0 20px;
+}
+
+#main #block #column_l p:not(:first-child) {
+	margin-top: 10px;
+}
+
+#main #block #column_r {
+	float: left;
+	width: 60%;
+	padding: 20px 20px 0 40px;
+}
+
+#main #block #column_r .projects {
+	position: relative;
+	display: inline-block;
+	float: left;
+	margin-top: 15px;
+}
+
+#main #block #column_r .projects .overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background: rgba(255, 255, 255, 0.7);
+	font-weight: 600;
+	visibility: hidden;
+}
+
+#main #block #column_r .projects .overlay p {
+	margin:80px 0 0 10px;
+	color: rgb(0, 0, 0);
+
+}
+
+
+#main #block #column_r .projects:nth-child(odd) {
+	margin-left: 15px;
+}
+
+.projects img {
+	border: 1px solid rgb(220, 220, 220);
+}
+
+#preach_intro {
+	width: 50%;
+	height: 300px;
+	display: none;
+}
+
+#preach_intro #preach_nav {
+	position: absolute;
+	top: 270px;
+	left: 30%;
+}
+
+#preach_intro #preach_nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#main #blog_post {
+	width: 100%;
+	display: inline-block;
+	padding: 20px 20px 0 20px;
+}
+
+#main #blog_post #blog_content {
+	width: 93%;
+}
+
+#main #blog_post #blog_content p {
+	margin-top: 10px;
+}
+
+
+#main #resources {
+	width: 100%;
+	display: inline-block;
+	padding: 20px 20px 20px 20px;
+}
+
+#flickr_ribbon {
+	width: 100%;
+}
+
+#flickr_ribbon h4 {
+	margin-left: 20px;
+}
+
+#flickr_ribbon small {
+	margin-left: 20px;
+}
+
+#flickr_ribbon #flickr_list {
+	margin: 10px 0 20px 0;
+	text-align: center;
+}
+
+#flickr_ribbon #flickr_list li {
+	display: inline-block;
+	height: 100px;
+}
+
+#flickr_ribbon #flickr_list li:hover {
+	opacity: 0.7;
+}
+
+#flickr_ribbon #flickr_list li:not(:first-child) {
+	margin-left: 5px;
+}
+
+#flickr_ribbon #flickr_list li img {
+	height: 100%;
+}
+
+footer {
+	width: 100%;
+	height: 50px;
+}
+
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+
+	body {
+		width: 712px;
+		padding: 0px 28px 60px;
+		margin: 0 auto;
+	}
+
+	.background {
+		width:100%;
+	}
+
+	header ul {
+		float: right;
+		margin: 10px 30px 0px 0;
+	}
+
+	#main #block #column_l {
+		width: 30%;
+		padding: 20px 0 0 20px;
+	}
+
+	#main #block #column_r {
+		width: 48%;
+	}
+
+	#main #block #column_r h4 {
+		margin-left: 20px;
+	}
+
+	#main #block #column_r .projects:nth-child(odd) {
+		margin: 20px 0 0 50px;
+	}
+
+	#main #block #column_r .projects {
+		margin: 20px 0 0 50px;
+	}
+
+	#main #resources {
+		padding: 40px 20px 20px 20px;
+	}
+}
+
+
+
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+
+	html {
+		background: url(../image/big_towers.jpg) no-repeat center top;
+		-webkit-background-size: auto;
+	  	-moz-background-size: auto;
+	  	-o-background-size: auto;
+	 	background-size: auto;
+	}
+
+	body {
+		width: 252px;
+		padding: 0px 34px 60px;
+		margin: 0 auto;
+	}
+
+	.background {
+		width:100%;
+	}
+
+	header {
+		height: 70px;
+	}
+
+	header #tab {
+		display:none;
+	}
+
+	header h2 {
+		font-weight: 600;
+		font-size: 1.4em;
+		color: rgb(1, 1, 1);
+	}
+
+	header ul {
+		margin: -10px auto;
+		font-size: 1em;
+	}
+
+	#main aside {
+		margin: 0 auto; /*This value dictates the gap between header and block.*/
+		text-align: center;
+		font-family: 'Droid Sans', sans-serif;
+		font-size: 1.2em;
+		font-style: italic;
+	}
+
+	#main #block #column_l {
+		width: 90%;
+		padding: 5px 0 0 10px;
+	}
+
+	#main #block #column_l h4 {
+		display: none;
+	}
+
+	#main #block #column_r {
+		width: 90%;
+		padding: 20px 20px 0 10px;
+	}
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	body {
+		width: 436px;
+		padding: 36px 22px 48px;
+	}
+
+	.background {
+		width: 100%;
+	}
+	
+}
+
