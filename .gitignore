@@ -5,3 +5,4 @@ pandadora/
 wip/
 admin/core/connect/database.php
 sample/preach/core/connect/database.php
+.ssh/

@@ -1,126 +1,3 @@
-python test.py
-python test.py
-python test.py first 2nd 3rd
-python test.py first 2nd dog
-python test.py first 2nd dog
-python test.py first 2nd dog
-python test.py first 2nd dog
-python test.py moo choo
-python test.py This
-python test.py This
-python test.py 3434343434
-python test.py this that
-python test.py this that
-python test.py this
-python test.py this
-python test.py this
-python test.py this that
-python test.py this that
-python test.py name and height?
-python test.py name and height
-python test.py name height
-python test.py name height
-python test.py name height
-python test.py test.txt
-python test.py test.txt
-pydoc open
-python test.py test.txt
-python test.py test.txt
-python test.py test.txt
-python
-python
-python
-python test.py
-python test.py
-python test.py
-python test.py
-pydoc file
-python test.py
-python test.py
-ls
-pico test.php
-exit
-ls
-pico index.php
-pico test.phop
-pico index.php
-pico index.php
-ls -l
-chown root index.php
-sudo chown root index.php
-exit
-ls
-exit
-ls
-camera.py
-python camera.py
-sudo python camera.py
-exit
-sudo camera.py
-sudo python camera.py
-sudo python camera.py
-pico camera.py
-sudo python camera.py
-sudo python camera.py
-pico camera.py
-sudo python camera.py
-ls
-mkdir camera
-ls
-ls -l camera
-cp camera.py camera
-ls
-cd camera
-ls
-touch photo_number.sav
-ls
-ls
-mkdir model
-ls
-mkdir view
-ls
-touch index.php
-ls
-cd model
-ls
-interface.php
-touch interface.php
-ls
-cd ..
-cd ..
-ls
-mv photo.php /camera/view
-mv photo.php /camera/view/
-ls
-cd camera
-ls
-cd view
-ls
-cd ..
-cd ..
-mv photo.php /camera/view/
-mv photo.php /camera/view
-mv photo.php camera/view/
-cd camera
-cd view
-ls
-cd ..
-cd ..
-cd camera
-ls
-ls -l index.php
-cd view
-ls
-cp photo.php /var/www/
-mkdir photos
-ls
-pico photo.php
-cd ..
-sudo pico index.php
-pico index.php
-ls
-cd view
-ls
 pico controls.php
 ls
 cd ..
@@ -497,4 +374,127 @@ ls
 cd scripts
 ls
 sudo pico flickr_ribbon.js 
+exit
+ll
+ls
+sudo rm -rf steve
+rm -rf steve
+ll
+ls
+cd plugins/
+ll
+ls
+cd instagram
+ls
+cd ..
+cd ..
+ll
+ls
+mkdir wip
+cd sample/
+ll
+ls
+cd ..
+ll
+ls
+ls -l
+alias ll="ls -l"
+ll
+cd old
+ll
+cd ..
+ll
+mv canvas wip
+ll
+mv plugins/ wip
+mv paycom wip
+ll
+ll image
+ll
+git init
+echo ant-web/ >> .gitignore
+echo old/ >> .gitignore
+echo pandadora/ >> .gitignore
+echo wip/ >> .gitignore
+cd admin
+ll
+cd core
+ll
+cd connect
+ll
+pico database.php 
+cd ..
+cd ..
+cd ..
+git st
+echo admin/core/connect/database.php >> .gitignore
+pico .gitignore
+cd sample/
+ll
+cd ..
+ll
+echo sample/preach/core/connect/database.php >> .gitignore
+cd scripts/
+ll
+pico flickr_ribbon.js 
+cd ..
+git st
+git status
+pico .gitignore
+git add .
+git commit -am'Initial commit.'
+git status
+git commit -am'initial commit'
+git config --global user.email "dostoy320@gmail.com"
+git config --global user.name "Adam Gregory"
+git commit -am'initial commit'
+git status
+git add .
+git commit -am'...'
+git status
+git remote add origin git@github.com:Dostoy320/gregory.git
+git push -u origin master
+ssh -vT git@github.com
+ssh-add -l
+ssh-keygen -lf ~/.ssh/id_rsa.pub
+ssh-keygen
+ssh-keygen -t rsa -C "dostoy320@gmail.com"
+sudo apt-get install xclip
+ll
+cd ~/.ssh
+ll
+pico id_rsa.pub 
+pico id_rsa.pub 
+ssh -T git@github.com
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+cd var
+cd www
+ll
+git st
+git status
+ll
+git add .
+git commit -am'...'
+git commit ...
+git reset --soft 'HEAD^'
+git status
+git reset HEAD .ssh/id_rsa
+git reset HEAD .ssh/id_rsa.pub
+git reset HEAD .ssh/known_hosts
+git status
+git rm -rf .ssh/
+git rm -RF .ssh
+git rm .ssh
+cd .ssh
+cd ..
+git rm /.ssh
+rm -rf .ssh
+cd .ssh
+exit
+exit
 exit
