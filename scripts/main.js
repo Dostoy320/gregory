@@ -52,9 +52,11 @@ Animations for the Spec page.
 
 /*** Animate the "specs" tab to grow/shrink on hover ***/
 $("#tab").hover(function() {
+		$(this).animate({height: "30px"}, 200);
 		$(this).animate({paddingTop: "10px"}, 200);
 	}, function() {
 		$(this).animate({paddingTop: "0px"}, 200);
+		$(this).animate({height: "20px"}, 200);
 	}
 );
 
