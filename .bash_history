@@ -1,37 +1,3 @@
-pico controls.php
-ls
-cd ..
-ls
-pico index.php
-cd view
-ls
-rm controls.php
-ls
-pico header.php
-ls
-pico photo.php
-ls
-ls -l photo.php
-ls -l photo.php
-chmod g+rw
-chmod g+rw photo.php
-ls -l photo.php
-chmod g+rw photo.php
-chmod o+rw photo.php
-chmod g+rw photo.php
-ls -l photo.php
-ls
-ls -l header.php
-chmod o+rw *
-ls -l header.php
-chmod o+rw *
-chmod o+rw *
-chmod o+rw *
-chmod o+rw *
-chmod o+rw *
-chmod o+rw *
-chmod o+rw *
-chmod o+rw *
 cd ..
 chmod o+rw index.php
 ls
@@ -496,5 +462,39 @@ git rm /.ssh
 rm -rf .ssh
 cd .ssh
 exit
+exit
+exit
+ssh -T git@github.com
+cd ..
+cd ..
+ll
+cd home
+cd web
+ll
+ll
+ls
+cd web
+cd ..
+cd var
+cd www
+ssh-keygen
+ssh-keygen -t rsa -C "dostoy320@gmail.com"
+cd .ssh
+ll
+ls
+pico id_rsa.pub
+cd ..
+ssh -T git@github.com
+echo .ssh/ >> .gitignore
+git status
+git add .
+git commit -am'...'
+git remote
+git push origin master
+pico .gitignore
+git st
+git status
+git add .
+git commit -am'removed left column from index.html'
 exit
 exit

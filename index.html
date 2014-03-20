@@ -12,7 +12,9 @@ Any element with class "jlink" is clickable and tied to a handler in main.js
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	
 	<link rel="stylesheet" media="all" href="css/gregory.css"/>
+	<link rel="stylesheet" media="all" href="css/project_slider.css"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -118,7 +120,7 @@ Any element with class "jlink" is clickable and tied to a handler in main.js
 				<a href="http://www.raspberrypi.org/" target="_blank">Raspberry Pi</a>, which controls 
 				stepper motors, takes photos and powers this site.
 			</div> -->
-			<div id="column_r">
+			<!-- <div id="column_r">
 				<h4>Current Web-Based Projects</h4>
 					<div class='projects'>
 						<img src='image/showtracker_s.png'>
@@ -141,7 +143,85 @@ Any element with class "jlink" is clickable and tied to a handler in main.js
 							<p class="jlink">Preach Blog CMS</p>
 						</div>
 					</div>
+			</div> -->
+
+			<!-- Project Slider -->
+			<h2 class="project_heading">Current Projects</h2>
+			<div id="slider">
+				<div class='control_prev'><</div>
+				<div class='control_next'>></div>
+				<ul>
+
+					<!-- ShowTracker Project Slide -->
+					<li class='projects'>
+						<div class='project_image'>
+							<a href='http://show-tracker.herokuapp.com' target="_blank">
+								<img src='image/showtracker_s.png'>
+							</a>
+						</div>
+						<div class="project_description">
+							<h3>ShowTracker</h3>
+							<p>
+								This Python-based app uses The Movie Database API to retrieve season and episode data for television shows. Users can track their
+								progress through a program and rate individual episodes.
+							</p>
+							<h4>Stack:</h4>
+								Flask (with Jinja templating)<br>
+								SQLAlchemy ORM<br>
+								SASS + Compass for CSS Preprocessing
+						</div>
+					<br><br>
+					<p><strong>* The app lives on Heroku, and the free instances have a brief initial delay. Please be patient!</strong></p>
+					<p><strong>* <i>test / test</i> will log you in if you don't want to make an account</strong></p>
+					</li>
+
+					<!-- RasPi Camera Project Slide -->
+					<li class="projects">
+						<div class="project_image">
+							<a href="camera/index.php" target="_blank">
+								<img src="image/picam_s.png">
+							</a>
+						</div>
+						<div class="project_description">
+							<h3>RasPi Camera</h3>
+							<p>
+								A small, PHP-based app that connects the Raspberry Pi Camera to
+								the web.
+							</p>
+							<h4>Stack:</h4>
+								Python script<br>
+								PHP
+						</div>
+					</li>
+
+					<!-- Preach CMS Project Slide -->
+					<li class="projects">
+						<div class="project_image">
+							<a href="sample/preach/index.php" target="_blank">
+								<img src="image/preach_s.png">
+							</a>
+						</div>
+						<div class="project_description">
+							<h3>Preach Custom CMS</h3>
+							<p>
+								A simple PHP-based CMS built around the TinyMCE editor.
+							</p>
+							<br>
+							<p>
+								A friend built a static website for a local church and took on
+								the weekly task of manually updating their calendar and message.
+								I built this simple CMS to give the church an easy way to update these two pages on their own with a text editor.
+							</p>
+							<br>
+							<p>
+								The image at left links to an unstyled sample version of the backend. <br>
+								<strong>Login:</strong> <i>admin / admin</i>
+							</p>
+						</div>
+					</li>
+				</ul>
 			</div>
+
 			<!-- Begin Blog Post served via AJAX in main.js -->
 			<div id="blog_post">
 				<div id="blog_title">
@@ -197,6 +277,7 @@ Any element with class "jlink" is clickable and tied to a handler in main.js
 
 <script src="scripts/main.js"></script>
 <script src="scripts/flickr_ribbon.js"></script>
+<script src="scripts/project_slider.js"></script>
 
 </body>
 </html>

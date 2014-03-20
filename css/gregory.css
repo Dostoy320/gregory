@@ -130,7 +130,7 @@ html {
 body {
 	width: 960px;
 	height: 100%;
-	padding: 0px 48px 84px;
+	/*padding: 0px 48px 84px;*/
 	margin: 0 auto;
 	position: relative;
 	overflow-y: scroll;
@@ -269,55 +269,33 @@ header #tab {
 	border: 1px solid rgb(220, 220, 220);
 }
 
-#main #block #column_l {
+#main #block h2.project_heading {
+	margin: 10px 0 20px 20px;
+}
+
+#main #block #slider ul .projects {
+	display: block;
 	float: left;
-	width: 30%;
-	padding: 20px 0 0 20px;
+}
+#main #block #slider ul .projects a {
+	display: block;
 }
 
-#main #block #column_l p:not(:first-child) {
-	margin-top: 10px;
-}
-
-#main #block #column_r {
-	float: left;
-	margin-left: 48px;
-	width: 90%;
-	border-bottom: 2px solid #3C3C3C;;
-	padding: 20px 20px 10px 20px;
-}
-
-#main #block #column_r .projects {
-	position: relative;
-	display: inline-block;
-	float: center;
-	margin: 15px 0 0 20px;
-}
-
-#main #block #column_r .projects .overlay {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	background: rgba(255, 255, 255, 0.7);
-	font-weight: 600;
-	visibility: hidden;
-}
-
-#main #block #column_r .projects .overlay p {
-	margin:80px 0 0 10px;
-	color: rgb(0, 0, 0);
-
-}
-
-
-#main #block #column_r .projects:nth-child(odd) {
-	margin-left: 15px;
-}
-
-.projects img {
+#main #block #slider ul .projects img {
+	margin: 0 auto;
 	border: 1px solid rgb(220, 220, 220);
+	display: block;
+}
+#main #block #slider ul .projects .project_image {
+	display: inline-block;
+	float: left;
+	width: 200px;
+}
+
+#main #block #slider ul .projects .project_description {
+	display: inline-block;
+	width: 580px;
+	margin-left: 15px;
 }
 
 #preach_intro {
@@ -408,47 +386,7 @@ px      68    160    252    344    436    528    620    712    */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 
 
-	body {
-		width: 712px;
-		padding: 0px 28px 60px;
-		margin: 0 auto;
-	}
-
-	.background {
-		width:100%;
-	}
-
-	header ul {
-		float: right;
-		margin: 10px 30px 0px 0;
-	}
-
-	#main #block #column_l {
-		width: 30%;
-		padding: 20px 0 0 20px;
-	}
-
-	#main #block #column_r {
-		width: 48%;
-	}
-
-	#main #block #column_r h4 {
-		margin-left: 20px;
-	}
-
-	#main #block #column_r .projects:nth-child(odd) {
-		margin: 20px 0 0 50px;
-	}
-
-	#main #block #column_r .projects {
-		margin: 20px 0 0 50px;
-	}
-
-	#main #resources {
-		padding: 40px 20px 20px 20px;
-	}
 }
-
 
 
 /*		Mobile Layout: 320px.
@@ -461,64 +399,7 @@ px      68    160    252    */
 
 @media only screen and (max-width: 767px) {
 
-	html {
-		background: url(../image/big_towers.jpg) no-repeat center top;
-		-webkit-background-size: auto;
-	  	-moz-background-size: auto;
-	  	-o-background-size: auto;
-	 	background-size: auto;
-	}
 
-	body {
-		width: 252px;
-		padding: 0px 34px 60px;
-		margin: 0 auto;
-	}
-
-	.background {
-		width:100%;
-	}
-
-	header {
-		height: 70px;
-	}
-
-	header #tab {
-		display:none;
-	}
-
-	header h2 {
-		font-weight: 600;
-		font-size: 1.4em;
-		color: rgb(1, 1, 1);
-	}
-
-	header ul {
-		margin: -10px auto;
-		font-size: 1em;
-	}
-
-	#main aside {
-		margin: 0 auto; /*This value dictates the gap between header and block.*/
-		text-align: center;
-		font-family: 'Droid Sans', sans-serif;
-		font-size: 1.2em;
-		font-style: italic;
-	}
-
-	#main #block #column_l {
-		width: 90%;
-		padding: 5px 0 0 10px;
-	}
-
-	#main #block #column_l h4 {
-		display: none;
-	}
-
-	#main #block #column_r {
-		width: 90%;
-		padding: 20px 20px 0 10px;
-	}
 }
 
 
@@ -532,15 +413,6 @@ cols    1     2      3      4      5
 px      68    160    252    344    436    */
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-	
-	body {
-		width: 436px;
-		padding: 36px 22px 48px;
-	}
 
-	.background {
-		width: 100%;
-	}
-	
 }
 
