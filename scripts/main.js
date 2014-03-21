@@ -37,28 +37,23 @@ function RetrieveLastPost() {
 }
 
 /*****
-Toggle title overlay on project photos.
+AJAX call to Preach for post list
 *****/
-$("#column_r .projects").hover(function() {
-	$(".overlay", this).css("visibility", "visible");
-}, function() {
-	$(".overlay", this).css("visibility", "hidden")
+function RetrievePostList() {
+	var dataString = 'action=retrieve_post_list';
+
+	$.ajax({
+		type: "POST",
+		url: "admin/index.php",
+		data: dataString,
+		dataType: 'json',
+		success: function (data) {
+			for (var i=0; i < data.length; i++) {
+				$('#post_list ul').append("<li>" + data[i]['title'] + "</li>");
+			}
+		}
+	});
 }
-);
-
-/*****
-Animations for the Spec page.
-*****/
-
-/*** Animate the "specs" tab to grow/shrink on hover ***/
-// $("#tab").hover(function() {
-// 		$(this).animate({height: "30px"}, 200);
-// 		$(this).animate({paddingTop: "10px"}, 200);
-// 	}, function() {
-// 		$(this).animate({paddingTop: "0px"}, 200);
-// 		$(this).animate({height: "20px"}, 200);
-// 	}
-// );
 
 /*** Hides/shows the main page/specs. ***/
 function ShowSpecs() {
@@ -86,7 +81,10 @@ function ShowPreach() {
 }
 
 /* AJAX call for recent blog post */
-RetrieveLastPost()
+RetrieveLastPost();
+
+/* Populate blog navigation sidebar */
+RetrievePostList();
 
 /* Navigate to Specs page from tab click */
 $("#tab").on("click", ShowSpecs);

@@ -91,6 +91,11 @@ ol li {
 	line-height: 30px;
 }
 
+.bigish, h5 {
+	font-size: 18px;
+	line-height: 26px;
+}
+
 body {
 	font-family: 'Open Sans', sans-serif;
 }
@@ -211,6 +216,10 @@ header h2 {
 	color: rgb(50, 50, 50);
 	margin: 20px 0 0 20px;
 }
+header #email {
+	margin: 5px 0 0 20px;
+	display: inline-block;
+}
 
 header ul {
 	float: right;
@@ -322,13 +331,23 @@ header #tab {
 }
 
 #main #blog_post #blog_content {
-	width: 93%;
+	width: 75%;
+	display: inline-block;
+	float: left;
 }
 
 #main #blog_post #blog_content p {
 	margin-top: 10px;
 }
 
+#main #blog_post #blog_navigation {
+	width: 20%;
+	min-height: 300px;
+	display: inline-block;
+	margin: 10px 0 0 15px;
+	padding: 0 0 0 5px;
+	border-left: 1px solid #2A2A2A;
+}
 
 #main #resources {
 	width: 100%;

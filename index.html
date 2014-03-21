@@ -90,12 +90,10 @@ Any element with class "jlink" is clickable and tied to a handler in main.js
 
 	<header>
 		<h2>Adam Gregory</h2>
+		<p id='email'>dostoy320@gmail.com</p>
 		<ul>
 			<li>
 				<a id='link_curator'>Link Curator</a>
-			</li>
-			<li>
-				<a id='contact'>Contact</a>
 			</li>
 			<li>
 				<a href="https://github.com/dostoy320" target="_blank">I'm on GitHub!</a>
@@ -108,42 +106,9 @@ Any element with class "jlink" is clickable and tied to a handler in main.js
 
 	<div id="main">
 		<aside>
-		This site is always a work in progress.
+		updates in progress...
 		</aside>
 		<div id="block">
-			<!-- <div id="column_l">
-				<h4>Hello.</h4>
-				<p>I'm interested in pursuing a career in software/web development. This
-				site chronicles my progress in that direction.</p>
-				<p>My languages of focus at the moment are Python and Javascript. Many
-				of my experiments in Python are based around the 
-				<a href="http://www.raspberrypi.org/" target="_blank">Raspberry Pi</a>, which controls 
-				stepper motors, takes photos and powers this site.
-			</div> -->
-			<!-- <div id="column_r">
-				<h4>Current Web-Based Projects</h4>
-					<div class='projects'>
-						<img src='image/showtracker_s.png'>
-						<a href='http://show-tracker.herokuapp.com' target="_blank">
-						<div id="showtracker_link" class="overlay">
-							<p>ShowTracker</p>
-						</div>
-					</div>
-					<div class='projects'>
-						<img src="image/picam_s.jpg">
-						<a href="camera/index.php" target="_blank">
-						<div id="camera_link" class="overlay">
-							<p>Raspberry Pi Camera Module</p>
-						</div>
-						</a>
-					</div>
-					<div class='projects'>
-						<img src="image/preach_s.jpg">
-						<div id="preach_link" class="overlay jlink">
-							<p class="jlink">Preach Blog CMS</p>
-						</div>
-					</div>
-			</div> -->
 
 			<!-- Project Slider -->
 			<h2 class="project_heading">Current Projects</h2>
@@ -221,6 +186,7 @@ Any element with class "jlink" is clickable and tied to a handler in main.js
 					</li>
 				</ul>
 			</div>
+			<!-- End Project Slider -->
 
 			<!-- Begin Blog Post served via AJAX in main.js -->
 			<div id="blog_post">
@@ -233,6 +199,14 @@ Any element with class "jlink" is clickable and tied to a handler in main.js
 				</small>
 				</div>
 				<div id="blog_content">
+				</div>
+				<div id="blog_navigation">
+					<h5>Recent Posts:</h5>
+					<div id="post_list">
+						<ul>
+							<!-- Post List populated from database -->
+						</ul>
+					</div>
 				</div>
 			</div>
 			<!-- End Blog Post -->

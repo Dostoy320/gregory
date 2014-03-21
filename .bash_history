@@ -1,8 +1,3 @@
-cd ..
-chmod o+rw index.php
-ls
-pico camera.py
-sudo python camera.py
 ls
 pico photo_number.sav
 sudo python camera.py
@@ -497,4 +492,9 @@ git status
 git add .
 git commit -am'removed left column from index.html'
 exit
+exit
+git status
+git add .
+git commit -am'Added project slideshow'
+git push origin master
 exit
