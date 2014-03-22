@@ -1,8 +1,3 @@
-ls -l
-ls
-cd photos
-ls
-ls -l
 cd ..
 cd ..
 cd ..
@@ -497,4 +492,9 @@ cd scripts/
 ll
 ls
 pico main.js 
+exit
+git status
+git add .
+git commit -am'Recent Post javascript complete'
+git push origin master
 exit
