@@ -128,7 +128,7 @@ Any element with class "jlink" is clickable and tied to a handler in main.js
 							<h3>ShowTracker</h3>
 							<p>
 								This Python-based app uses The Movie Database API to retrieve season and episode data for television shows. Users can track their
-								progress through a program and rate individual episodes.
+								progress through programs and rate individual episodes.
 							</p>
 							<h4>Stack:</h4>
 								Flask (with Jinja templating)<br>
@@ -136,7 +136,8 @@ Any element with class "jlink" is clickable and tied to a handler in main.js
 								SASS + Compass for CSS Preprocessing
 						</div>
 					<br><br>
-					<p><strong>* The app lives on Heroku, and the free instances have a brief initial delay. Please be patient!</strong></p>
+					<p><strong>* The app lives on Heroku, and the free instances have a several-second initial delay. Please be patient!</strong></p>
+					<p>* The styling favors mobile. I'm working on the desktop layout.</p>
 					<p><strong>* <i>test / test</i> will log you in if you don't want to make an account</strong></p>
 					</li>
 
@@ -174,15 +175,15 @@ Any element with class "jlink" is clickable and tied to a handler in main.js
 							<br>
 							<p>
 								A friend built a static website for a local church and took on
-								the weekly task of manually updating their calendar and message.
-								I built this simple CMS to give the church an easy way to update these two pages on their own with a text editor.
+								the weekly task of manually updating their calendar and "message".
+								I built this simple CMS to give the church an easy way to update these two pages on their own with a WYSIWYG editor. I use the same editor for the blog and link curator sections of this site.
 							</p>
 							<br>
-							<p>
-								The image at left links to an unstyled sample version of the backend. <br>
-								<strong>Login:</strong> <i>admin / admin</i>
-							</p>
 						</div>
+						<p>
+							The image above links to an unstyled sample version of the backend. <br>
+							<strong>Login:</strong> <i>admin / admin</i>
+						</p>
 					</li>
 				</ul>
 			</div>
@@ -202,11 +203,9 @@ Any element with class "jlink" is clickable and tied to a handler in main.js
 				</div>
 				<div id="blog_navigation">
 					<h5>Recent Posts:</h5>
-					<div id="post_list">
-						<ul>
-							<!-- Post List populated from database -->
-						</ul>
-					</div>
+					<ul id='post_list'>
+						<!-- Post List populated from database -->
+					</ul>
 				</div>
 			</div>
 			<!-- End Blog Post -->
@@ -240,7 +239,7 @@ Any element with class "jlink" is clickable and tied to a handler in main.js
 			</div>
 			<div id="flickr_ribbon">
 				<h4>My Recent Posts to Flickr</h4>
-				<small>I love cameras, and it was an excuse to play with the Flickr API</small>
+				<small>An excuse to play with the Flickr API</small>
 				<ul id="flickr_list">
 				<!-- Loads via AJAX from flickr_ribbon.js -->
 				</ul>

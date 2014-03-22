@@ -327,7 +327,7 @@ header #tab {
 #main #blog_post {
 	width: 100%;
 	display: inline-block;
-	padding: 20px 20px 0 20px;
+	padding: 30px 10px 0 20px;
 }
 
 #main #blog_post #blog_content {
@@ -342,12 +342,19 @@ header #tab {
 
 #main #blog_post #blog_navigation {
 	width: 20%;
-	min-height: 300px;
+	min-height: 500px;
 	display: inline-block;
 	margin: 10px 0 0 15px;
 	padding: 0 0 0 5px;
-	border-left: 1px solid #2A2A2A;
+	border-left: 1px solid #545454;
 }
+#main #blog_post #blog_navigation #post_list li {
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #D4D4D4;
+	cursor: pointer;
+}
+
 
 #main #resources {
 	width: 100%;

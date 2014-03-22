@@ -18,7 +18,8 @@
 	Camera to take a photo.</p>  <p>The photo is saved to a directory,
 	and a bit more php displays the most recent photo.</p>
 	<p>I'd like to redo this completely in Python, probably with 
-	<a href="http://flask.pocoo.org/">Flask</a>.</p>
+	<a href="http://flask.pocoo.org/">Flask</a>, and I'd like to add exposure 
+	controls</p>
 	<p>Give it a shot:<br>
 	<small>(though the office may be dark)</small></p>
 

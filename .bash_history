@@ -1,20 +1,3 @@
-ls
-pico photo_number.sav
-sudo python camera.py
-cd view
-ls
-pico photo.php
-ls -l photos
-chown photos web
-chown web photos
-ls -l photos
-cd photos
-ls
-ls -l 11.jpg
-cd ..
-ls -l
-chmod o+rw *
-ls
 ls -l
 ls
 cd photos
@@ -497,4 +480,21 @@ git status
 git add .
 git commit -am'Added project slideshow'
 git push origin master
+exit
+git status
+git add .
+git commit -am'Added function to main.js for post list'
+git push origin master
+exit
+cd admin
+ll
+ls
+cd scripts/
+ls
+cd ..
+cd ..
+cd scripts/
+ll
+ls
+pico main.js 
 exit

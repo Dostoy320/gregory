@@ -20,9 +20,7 @@ function RetrieveLinkList() {
 /*****
 AJAX call to Preach for blog content
 *****/
-function RetrieveLastPost() {
-	var dataString = 'action=retrieve_post_by_type&post_type=front page';
-
+function RetrievePost(dataString) {
 	$.ajax({
 		type: "POST",
 		url: "admin/index.php",
@@ -33,6 +31,28 @@ function RetrieveLastPost() {
 			$("#blog_post #blog_date small").html(data.datetime);
 			$("#blog_post #blog_content").html(data.content);
 		}
+	})
+}
+
+/*****
+AJAX call to Preach for clicked post
+*****/
+function RetrieveClickedPost() {
+	$('#post_list li').on('click', function() {
+		var post_id = $(this).attr('post_id');
+		var dataString = 'action=retrieve_post&post_id=' + post_id;
+
+	$.ajax({
+			type: "POST",
+			url: "admin/index.php",
+			data: dataString,
+			dataType: "json",
+			success: function(data) {
+				$("#blog_post #blog_title h4").html(data.title);
+				$("#blog_post #blog_date small").html(data.datetime);
+				$("#blog_post #blog_content").html(data.content);
+			}
+		})
 	})
 }
 
@@ -48,9 +68,12 @@ function RetrievePostList() {
 		data: dataString,
 		dataType: 'json',
 		success: function (data) {
-			for (var i=0; i < data.length; i++) {
-				$('#post_list ul').append("<li>" + data[i]['title'] + "</li>");
+			for (post in data) {
+				$('#post_list').append("<li post_id=" + data[post]['id'] + ">"
+					+ data[post]['title'] + "</li>");
 			}
+			// Assign handlers to Recent Posts list:
+			RetrieveClickedPost();
 		}
 	});
 }
@@ -81,7 +104,8 @@ function ShowPreach() {
 }
 
 /* AJAX call for recent blog post */
-RetrieveLastPost();
+var dataString = 'action=retrieve_post_by_type&post_type=front page';
+RetrievePost(dataString);
 
 /* Populate blog navigation sidebar */
 RetrievePostList();
