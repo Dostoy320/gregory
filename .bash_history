@@ -1,13 +1,3 @@
-cd ..
-cd ..
-cd ..
-ls
-cd photos
-ls -l
-cd ..
-ls
-cd camera
-ls
 sudo python camera.py
 ls
 cd view
@@ -496,5 +486,15 @@ exit
 git status
 git add .
 git commit -am'Recent Post javascript complete'
+git push origin master
+exit
+git status
+git add .
+git commit -am'...'
+git status
+pico index.html 
+git status
+git add .
+git commit -am'typo!'
 git push origin master
 exit
