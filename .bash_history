@@ -1,16 +1,3 @@
-sudo python camera.py
-ls
-cd view
-ls
-ls -l
-chmod o+rw *
-chmod o+rw *
-cd photos
-ls
-cd ..
-chmod o+rw *
-chmod o+rw *
-chmod o+rw *
 chmod o+rw *
 chmod o+rw *
 chmod o+rw *
@@ -497,4 +484,17 @@ git status
 git add .
 git commit -am'typo!'
 git push origin master
+exit
+git clone git@github.com:Dostoy320/StarMerchant.git
+pico .gitignore
+git st
+git status
+git add .
+git commit -am'updated .gitignore'
+exit
+ll
+cd StarMerchant/
+git status
+git fetch origin
+git merge origin/master
 exit
