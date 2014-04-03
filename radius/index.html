@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Radius Experiment</title>
+	<link rel='stylesheet' type='text/css' href='radius.css'>
+</head>
+<body>
+<canvas id='radius_canvas' width='600' height='400'></canvas>
+<p>The canvas is displaying an array of coordinates spaced five pixels apart.</p>
+<p>Each array object contains a pair of x, y coordinates. <br>
+Specify an index value to remove all coordinates in a 20 point range to the left, right, above and below the specified coordinate.</p>
+
+<form id='index_select'>
+	Type an index between 0 and 9700:<input type="number" id="index_value" name="index_value">
+	<input type="button" id='index_submit' value="Submit">
+</form>
+<script src='radius.js'></script>
+</body>
+</html>

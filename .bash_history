@@ -1,40 +1,3 @@
-chmod o+rw *
-chmod o+rw *
-chmod o+rw *
-ls
-cd photos
-ls
-cd ..
-cd ..
-ls
-chmod o+rw index.php
-ls
-ls -l
-cd ..
-cd camera
-cd view
-cd photos
-ls
-cd ..
-chmod o+rw *
-chmod o+rw *
-chmod o+rw *
-chmod o+rw *
-chmod o+rw *
-cd ..
-chmod o+rw *
-chmod o+rw *
-chmod o+rw *
-ls
-cd view
-cd photos
-ls
-rm *
-ls
-cd ..
-ls
-cd ..
-ls
 pico photo_number.sav
 cd view
 chmod o+rw *
@@ -497,4 +460,41 @@ cd StarMerchant/
 git status
 git fetch origin
 git merge origin/master
+exit
+pico index.html 
+git status
+git add .
+git commit -am'updated email address'
+git push origin master
+exit
+cd admin
+cd core
+ll
+ls
+cd classes/
+pico posts.php 
+cd ..
+cd ..
+pico index.php 
+cd scripts/
+ll
+ls
+pico save.js 
+cd ..
+cd ..
+cd scripts/
+pico main.js 
+exit
+cd radius
+make
+ls
+rm counties.zip 
+ls
+exit
+ls
+cd ..
+ls
+cd ..
+ls
+ssh web@192.168.1.104
 exit

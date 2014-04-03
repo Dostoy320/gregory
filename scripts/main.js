@@ -28,7 +28,7 @@ function RetrievePost(dataString) {
 		dataType: 'json',
 		success: function(data) {
 			$("#blog_post #blog_title h4").html(data.title);
-			$("#blog_post #blog_date small").html(data.datetime);
+			$("#blog_post #blog_date small").html(data.posttime);
 			$("#blog_post #blog_content").html(data.content);
 		}
 	})
@@ -49,7 +49,7 @@ function RetrieveClickedPost() {
 			dataType: "json",
 			success: function(data) {
 				$("#blog_post #blog_title h4").html(data.title);
-				$("#blog_post #blog_date small").html(data.datetime);
+				$("#blog_post #blog_date small").html(data.posttime);
 				$("#blog_post #blog_content").html(data.content);
 			}
 		})

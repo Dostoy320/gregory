@@ -1,9 +1,10 @@
 from subprocess import call
 
+
 def savefile(position):
-	w = open("photo_number.sav", "w")
-	w.write(str(position))
-	w.close()
+    w = open("photo_number.sav", "w")
+    w.write(str(position))
+    w.close()
 
 f = open("photo_number.sav")
 r = int(f.read())
